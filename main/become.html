@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Become a Partner | Ranjana Plastic</title>
+  <meta name="description" content="Partner with Ranjana Plastic — India's trusted pipe manufacturer. Apply to become an authorized distributor or wholesale partner today." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="png/favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="header" id="site-header">
+  <div class="logo-nav-container">
+    <div class="logo-title">
+      <img src="png/lg.png" alt="Ranjana Plastic Logo" class="logo">
+      <h1 class="company-name">RANJANA <span>PLASTIC</span></h1>
+    </div>
+    <nav class="mobile-hidden" id="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="manufacturing.html">Manufacturing</a></li>
+        <li><a href="become.html" class="cta-nav active">Become a Partner</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</header>
+
+<!-- ===== PARTNER SECTION ===== -->
+<div class="partner-section">
+
+  <!-- Left: Info Panel -->
+  <div class="partner-image">
+    <div class="partner-image-content">
+      <div class="section-tag" style="color:var(--accent);background:rgba(232,160,32,0.12);border-color:rgba(232,160,32,0.2);display:inline-block;margin-bottom:24px;">Partnership Program</div>
+      <h2>Grow Your Business With <span>Ranjana Plastic</span></h2>
+      <p>Join India's fastest-growing plastic pipe distribution network. We support our partners with competitive margins, marketing materials, and dedicated account management.</p>
+
+      <ul class="partner-perks">
+        <li>Competitive wholesale pricing & bulk discounts</li>
+        <li>Priority stock allocation during peak seasons</li>
+        <li>Dedicated sales support & account manager</li>
+        <li>Marketing collateral & product training</li>
+        <li>Fast-track logistics across all Indian states</li>
+        <li>GST-compliant invoicing and documentation</li>
+      </ul>
+
+      <div style="margin-top:48px;padding:28px;background:rgba(255,255,255,0.06);border-radius:8px;border:1px solid rgba(255,255,255,0.08);">
+        <div style="font-family:'Barlow Condensed',sans-serif;font-size:0.8rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent);margin-bottom:12px;">Have Questions?</div>
+        <p style="color:rgba(255,255,255,0.75);font-size:0.95rem;margin-bottom:8px;">📧 ranjanaplastic05@gmail.com</p>
+        <p style="color:rgba(255,255,255,0.75);font-size:0.95rem;margin-bottom:4px;">📞 +91 7023007733</p>
+        <p style="color:rgba(255,255,255,0.75);font-size:0.95rem;">📞 +91 9829987654</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right: Form -->
+  <div class="partner-form">
+    <div class="section-tag" style="display:inline-block;margin-bottom:12px;">Apply Now</div>
+    <h2>Become Our Partner</h2>
+    <p class="sub">Fill in your details and our team will reach out within 24–48 hours.</p>
+
+    <form action="https://formsubmit.co/ranjanaplastic05@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Full Name" required />
+      <input type="email" name="email" placeholder="Business Email" required />
+      <input type="tel" name="mobile" placeholder="Mobile Number" required />
+      <input type="text" name="pincode" placeholder="Pincode / Area" required />
+      <input type="text" name="firmname" placeholder="Firm / Company Name" required />
+      <input type="text" name="gst" placeholder="GST Number" required />
+      <textarea name="description" placeholder="Briefly describe your business and the products you're interested in..." rows="5" required></textarea>
+      <button type="submit">Submit Partnership Application →</button>
+    </form>
+  </div>
+
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-inner">
+    <p>&copy; 2025 Ranjana Plastic. All Rights Reserved.</p>
+    <ul>
+      <li><a href="index.html#about">About Us</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms of Service</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script>
+  const header = document.getElementById('site-header');
+  window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 50));
+
+  function toggleMenu() {
+    const nav = document.getElementById('main-nav');
+    nav.classList.toggle('mobile-hidden');
+    nav.classList.toggle('mobile-shown');
+  }
+
+  document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', () => {
+      const nav = document.getElementById('main-nav');
+      if (nav.classList.contains('mobile-shown')) {
+        nav.classList.add('mobile-hidden');
+        nav.classList.remove('mobile-shown');
+      }
+    });
+  });
+</script>
+</body>
+</html>

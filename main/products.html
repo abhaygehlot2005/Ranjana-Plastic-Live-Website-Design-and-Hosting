@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Products | Ranjana Plastic</title>
+  <meta name="description" content="Browse Ranjana Plastic's full range of HDPE, PVC, CPVC, MDPE, and braided pipes. High quality, certified, and available across India." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="png/favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="header" id="site-header">
+  <div class="logo-nav-container">
+    <div class="logo-title">
+      <img src="png/lg.png" alt="Ranjana Plastic Logo" class="logo">
+      <h1 class="company-name">RANJANA <span>PLASTIC</span></h1>
+    </div>
+    <nav class="mobile-hidden" id="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html" class="active">Products</a></li>
+        <li><a href="manufacturing.html">Manufacturing</a></li>
+        <li><a href="become.html" class="cta-nav">Become a Partner</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</header>
+
+<!-- ===== PRODUCTS LAYOUT ===== -->
+<main class="products-page">
+
+  <!-- Sidebar -->
+  <aside class="products-sidebar">
+    <h2>Product Range</h2>
+    <button class="sidebar-btn active" onclick="showProduct(0, this)">Garden Hose Pipes</button>
+    <button class="sidebar-btn" onclick="showProduct(1, this)">Section Hose Pipes</button>
+    <button class="sidebar-btn" onclick="showProduct(2, this)">Level Pipes</button>
+    <button class="sidebar-btn" onclick="showProduct(3, this)">PVC Braided Pipes</button>
+    <button class="sidebar-btn" onclick="showProduct(4, this)">HDPE Pipes</button>
+    <button class="sidebar-btn" onclick="showProduct(5, this)">MDPE Pipes</button>
+  </aside>
+
+  <!-- Content -->
+  <div class="products-content">
+
+    <!-- Product 0: Garden Water Hose Pipes -->
+    <section id="product-0" class="product-detail active">
+      <div class="product-hero">
+        <img src="png/gardenpipe.jpg" alt="Garden Water Hose Pipes">
+        <div class="product-hero-info">
+          <div class="product-tag">Residential / Garden</div>
+          <h2>Garden Water Hose Pipes</h2>
+          <div class="product-specs">
+            <h4>Specifications</h4>
+            <ul>
+              <li>Material: Reinforced PVC</li>
+              <li>Size Range: 12.7mm to 38mm</li>
+              <li>Length Options: 7.62m, 15.24m, 30.48m</li>
+              <li>Pressure Rating: Up to 12 bar</li>
+            </ul>
+          </div>
+          <div class="product-specs">
+            <h4>Applications</h4>
+            <ul>
+              <li>Garden irrigation & watering</li>
+              <li>Car washing & outdoor cleaning</li>
+              <li>Residential water supply</li>
+            </ul>
+          </div>
+          <a href="png/gardenpipe.pdf" class="download-btn" download>⬇ Download Datasheet (PDF)</a>
+        </div>
+      </div>
+
+      <div class="application-gallery">
+        <h4>Application Gallery</h4>
+        <div class="gallery-row">
+          <img src="png/gwhp application1.jpg" alt="Garden use">
+          <img src="png/gwhp application2.jpg" alt="Construction use">
+          <img src="png/gwhp application3.jpg" alt="Industrial use">
+        </div>
+      </div>
+
+      <div class="product-contact-box">
+        <h4>Request a Quote for Garden Hose Pipes</h4>
+        <form action="https://formsubmit.co/ranjanaplastic05@gmail.com" method="POST">
+          <input type="hidden" name="product" value="Garden Water Hose Pipes">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" placeholder="Your requirement, quantity, location..." rows="4" required></textarea>
+          <button type="submit">Send Quote Request</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Product 1: Section Hose Pipes -->
+    <section id="product-1" class="product-detail">
+      <div class="product-hero">
+        <img src="png/sectionpipe.jpg" alt="Section Hose Pipes">
+        <div class="product-hero-info">
+          <div class="product-tag">Suction / Heavy Duty</div>
+          <h2>Section Hose Pipes</h2>
+          <div class="product-specs">
+            <h4>Specifications</h4>
+            <ul>
+              <li>Reinforced vacuum-resistant construction</li>
+              <li>Abrasion and kink resistant</li>
+              <li>Size Range: 19mm to 38mm</li>
+              <li>Length Options: 15.24m and 30.48m</li>
+              <li>Flexible under high pressure</li>
+            </ul>
+          </div>
+          <div class="product-specs">
+            <h4>Applications</h4>
+            <ul>
+              <li>Agricultural irrigation & suction</li>
+              <li>Industrial fluid transfer</li>
+              <li>Construction site water supply</li>
+              <li>Lawn care & cooling systems</li>
+            </ul>
+          </div>
+          <a href="png/sectionpipe.pdf" class="download-btn" download>⬇ Download Datasheet (PDF)</a>
+        </div>
+      </div>
+
+      <div class="application-gallery">
+        <h4>Application Gallery</h4>
+        <div class="gallery-row">
+          <img src="png/section ap1.jpg" alt="Agriculture use">
+          <img src="png/section ap2.jpg" alt="Construction use">
+          <img src="png/section ap3.jpg" alt="Industrial use">
+        </div>
+      </div>
+
+      <div class="product-contact-box">
+        <h4>Request a Quote for Section Hose Pipes</h4>
+        <form action="https://formsubmit.co/ranjanaplastic05@gmail.com" method="POST">
+          <input type="hidden" name="product" value="Section Hose Pipes">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" placeholder="Your requirement, quantity, location..." rows="4" required></textarea>
+          <button type="submit">Send Quote Request</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Product 2: Level Pipes -->
+    <section id="product-2" class="product-detail">
+      <div class="product-hero">
+        <img src="png/levelpipe.jpg" alt="Level Pipes">
+        <div class="product-hero-info">
+          <div class="product-tag">Construction / Utility</div>
+          <h2>Level Pipes</h2>
+          <div class="product-specs">
+            <h4>Specifications</h4>
+            <ul>
+              <li>Material: Transparent PVC</li>
+              <li>High optical clarity for level reading</li>
+              <li>Size Range: 6mm to 20mm</li>
+              <li>Length Options: 7.62m and 15.24m</li>
+              <li>UV and chemical resistant</li>
+            </ul>
+          </div>
+          <div class="product-specs">
+            <h4>Applications</h4>
+            <ul>
+              <li>Construction leveling and alignment</li>
+              <li>Water level measurement</li>
+              <li>Plumbing installations</li>
+            </ul>
+          </div>
+          <a href="png/levelpipe.pdf" class="download-btn" download>⬇ Download Datasheet (PDF)</a>
+        </div>
+      </div>
+
+      <div class="application-gallery">
+        <h4>Application Gallery</h4>
+        <div class="gallery-row">
+          <img src="png/level ap1.jpg" alt="Construction use">
+          <img src="png/level ap2.jpg" alt="Plumbing use">
+          <img src="png/level ap3.jpg" alt="Utility use">
+        </div>
+      </div>
+
+      <div class="product-contact-box">
+        <h4>Request a Quote for Level Pipes</h4>
+        <form action="https://formsubmit.co/ranjanaplastic05@gmail.com" method="POST">
+          <input type="hidden" name="product" value="Level Pipes">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" placeholder="Your requirement, quantity, location..." rows="4" required></textarea>
+          <button type="submit">Send Quote Request</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Product 3: PVC Braided Pipes -->
+    <section id="product-3" class="product-detail">
+      <div class="product-hero">
+        <img src="png/brpipe.jpg" alt="PVC Braided Pipes">
+        <div class="product-hero-info">
+          <div class="product-tag">Pressure / Flexible</div>
+          <h2>PVC Braided Pipes</h2>
+          <div class="product-specs">
+            <h4>Specifications</h4>
+            <ul>
+              <li>Multi-layer polyester braid reinforcement</li>
+              <li>High burst pressure tolerance</li>
+              <li>Size Range: 12.7mm to 50mm</li>
+              <li>Length Options: 15.24m, 30.48m, 50m rolls</li>
+              <li>Temperature resistant: -10°C to 65°C</li>
+            </ul>
+          </div>
+          <div class="product-specs">
+            <h4>Applications</h4>
+            <ul>
+              <li>High-pressure hydraulic lines</li>
+              <li>Industrial fluid transfer</li>
+              <li>Drip and sprinkler irrigation</li>
+              <li>Pneumatic applications</li>
+            </ul>
+          </div>
+          <a href="png/brpipe.pdf" class="download-btn" download>⬇ Download Datasheet (PDF)</a>
+        </div>
+      </div>
+
+      <div class="application-gallery">
+        <h4>Application Gallery</h4>
+        <div class="gallery-row">
+          <img src="png/br ap1.jpg" alt="Hydraulic use">
+          <img src="png/br ap2.jpg" alt="Irrigation use">
+          <img src="png/br ap3.jpg" alt="Industrial use">
+        </div>
+      </div>
+
+      <div class="product-contact-box">
+        <h4>Request a Quote for PVC Braided Pipes</h4>
+        <form action="https://formsubmit.co/ranjanaplastic05@gmail.com" method="POST">
+          <input type="hidden" name="product" value="PVC Braided Pipes">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" placeholder="Your requirement, quantity, location..." rows="4" required></textarea>
+          <button type="submit">Send Quote Request</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Product 4: HDPE Pipes -->
+    <section id="product-4" class="product-detail">
+      <div class="product-hero">
+        <img src="png/hdpepipe.jpg" alt="HDPE Pipes">
+        <div class="product-hero-info">
+          <div class="product-tag">Industrial / Agricultural</div>
+          <h2>HDPE Pipes</h2>
+          <div class="product-specs">
+            <h4>Specifications</h4>
+            <ul>
+              <li>Material: High-Density Polyethylene (PE 100)</li>
+              <li>Corrosion-free, lightweight, leak-proof</li>
+              <li>Size Range: 20mm to 110mm</li>
+              <li>Length Options: 6m, 12m coils and 50–200m rolls</li>
+              <li>Pressure Ratings: PN 6, PN 8, PN 10, PN 16</li>
+            </ul>
+          </div>
+          <div class="product-specs">
+            <h4>Applications</h4>
+            <ul>
+              <li>Municipal water supply & sewage</li>
+              <li>Agricultural drip & sprinkler systems</li>
+              <li>Industrial fluid & chemical transport</li>
+              <li>Telecom cable ducting</li>
+            </ul>
+          </div>
+          <a href="png/hdpepipe.pdf" class="download-btn" download>⬇ Download Datasheet (PDF)</a>
+        </div>
+      </div>
+
+      <div class="application-gallery">
+        <h4>Application Gallery</h4>
+        <div class="gallery-row">
+          <img src="png/hdpe ap1.jpg" alt="Agriculture use">
+          <img src="png/hdpe ap2.jpg" alt="Construction use">
+          <img src="png/hdpe ap3.jpg" alt="Industrial use">
+        </div>
+      </div>
+
+      <div class="product-contact-box">
+        <h4>Request a Quote for HDPE Pipes</h4>
+        <form action="https://formsubmit.co/ranjanaplastic05@gmail.com" method="POST">
+          <input type="hidden" name="product" value="HDPE Pipes">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" placeholder="Your requirement, quantity, location..." rows="4" required></textarea>
+          <button type="submit">Send Quote Request</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Product 5: MDPE Pipes -->
+    <section id="product-5" class="product-detail">
+      <div class="product-hero">
+        <img src="png/mdpepipe.jpg" alt="MDPE Pipes">
+        <div class="product-hero-info">
+          <div class="product-tag">Gas / Water Distribution</div>
+          <h2>MDPE Pipes</h2>
+          <div class="product-specs">
+            <h4>Specifications</h4>
+            <ul>
+              <li>Material: Medium-Density Polyethylene (PE 80)</li>
+              <li>Corrosion-free, lightweight, impact-resistant</li>
+              <li>Size Range: 19mm to 50mm</li>
+              <li>Length Options: 15.24m and 30.48m</li>
+              <li>Leak-proof press-fit & butt-fusion joints</li>
+            </ul>
+          </div>
+          <div class="product-specs">
+            <h4>Applications</h4>
+            <ul>
+              <li>Gas distribution networks</li>
+              <li>Potable water supply systems</li>
+              <li>Underground water & gas piping</li>
+              <li>Irrigation & industrial liquid transport</li>
+            </ul>
+          </div>
+          <a href="png/mdpepipe.pdf" class="download-btn" download>⬇ Download Datasheet (PDF)</a>
+        </div>
+      </div>
+
+      <div class="application-gallery">
+        <h4>Application Gallery</h4>
+        <div class="gallery-row">
+          <img src="png/mdpe ap1.jpg" alt="Agriculture use">
+          <img src="png/mdpe ap2.jpg" alt="Construction use">
+          <img src="png/mdpe ap3.jpg" alt="Industrial use">
+        </div>
+      </div>
+
+      <div class="product-contact-box">
+        <h4>Request a Quote for MDPE Pipes</h4>
+        <form action="https://formsubmit.co/ranjanaplastic05@gmail.com" method="POST">
+          <input type="hidden" name="product" value="MDPE Pipes">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" placeholder="Your requirement, quantity, location..." rows="4" required></textarea>
+          <button type="submit">Send Quote Request</button>
+        </form>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-inner">
+    <p>&copy; 2025 Ranjana Plastic. All Rights Reserved.</p>
+    <ul>
+      <li><a href="index.html#about">About Us</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms of Service</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script>
+  function showProduct(index, btn) {
+    document.querySelectorAll('.product-detail').forEach(s => s.classList.remove('active'));
+    document.querySelectorAll('.sidebar-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById('product-' + index).classList.add('active');
+    if (btn) btn.classList.add('active');
+  }
+
+  document.addEventListener('DOMContentLoaded', () => showProduct(0, document.querySelector('.sidebar-btn')));
+
+  const header = document.getElementById('site-header');
+  window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 50));
+
+  function toggleMenu() {
+    const nav = document.getElementById('main-nav');
+    nav.classList.toggle('mobile-hidden');
+    nav.classList.toggle('mobile-shown');
+  }
+</script>
+</body>
+</html>
